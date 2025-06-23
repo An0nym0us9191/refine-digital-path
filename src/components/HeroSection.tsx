@@ -21,7 +21,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
-              onClick={() => scrollToSection('contact')} 
+              onClick={() => window.open('https://calendly.com/vedunas/15-min-demo-call', '_blank')}
               size="lg" 
               className="bg-blue-600 hover:bg-blue-700 px-8 py-4 text-lg"
             >
