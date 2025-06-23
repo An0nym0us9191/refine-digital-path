@@ -17,8 +17,23 @@ const Footer = () => {
             <span>|</span>
             <span>München, Deutschland</span>
           </div>
-          <div className="mt-8 pt-8 border-t border-slate-700 text-sm text-slate-400">
-            © 2024 ÄsthetikWachstum. Alle Rechte vorbehalten.
+          <div className="mt-8 pt-8 border-t border-slate-700">
+            <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm">
+              <a href="/datenschutz" className="text-slate-400 hover:text-white transition-colors">
+                Datenschutzrichtlinien
+              </a>
+              <span className="text-slate-600">|</span>
+              <a href="/impressum" className="text-slate-400 hover:text-white transition-colors">
+                Impressum
+              </a>
+              <span className="text-slate-600">|</span>
+              <a href="/agb" className="text-slate-400 hover:text-white transition-colors">
+                AGB
+              </a>
+            </div>
+            <div className="text-sm text-slate-400">
+              © 2024 ÄsthetikWachstum. Alle Rechte vorbehalten.
+            </div>
           </div>
         </div>
       </div>
