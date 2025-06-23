@@ -15,7 +15,7 @@ const Index = () => {
     e.preventDefault();
     if (!email || !name) {
       toast({
-        title: "Please fill in all fields",
+        title: "Bitte füllen Sie alle Felder aus",
         variant: "destructive"
       });
       return;
@@ -23,8 +23,8 @@ const Index = () => {
     
     // Here you would typically send to your backend
     toast({
-      title: "Thank you for your interest!",
-      description: "We'll be in touch within 24 hours to discuss how we can help grow your practice."
+      title: "Vielen Dank für Ihr Interesse!",
+      description: "Wir werden uns innerhalb von 24 Stunden bei Ihnen melden, um zu besprechen, wie wir Ihre Praxis beim Wachstum unterstützen können."
     });
     
     setEmail("");
@@ -41,16 +41,16 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-slate-800">
-            Aesthetic<span className="text-blue-600">Growth</span>
+            Ästhetik<span className="text-blue-600">Wachstum</span>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('services')} className="text-slate-600 hover:text-blue-600 transition-colors">Services</button>
-            <button onClick={() => scrollToSection('results')} className="text-slate-600 hover:text-blue-600 transition-colors">Results</button>
-            <button onClick={() => scrollToSection('testimonials')} className="text-slate-600 hover:text-blue-600 transition-colors">Testimonials</button>
-            <button onClick={() => scrollToSection('contact')} className="text-slate-600 hover:text-blue-600 transition-colors">Contact</button>
+            <button onClick={() => scrollToSection('services')} className="text-slate-600 hover:text-blue-600 transition-colors">Leistungen</button>
+            <button onClick={() => scrollToSection('results')} className="text-slate-600 hover:text-blue-600 transition-colors">Ergebnisse</button>
+            <button onClick={() => scrollToSection('testimonials')} className="text-slate-600 hover:text-blue-600 transition-colors">Referenzen</button>
+            <button onClick={() => scrollToSection('contact')} className="text-slate-600 hover:text-blue-600 transition-colors">Kontakt</button>
           </nav>
           <Button onClick={() => scrollToSection('contact')} className="bg-blue-600 hover:bg-blue-700">
-            Get Started
+            Jetzt starten
           </Button>
         </div>
       </header>
@@ -60,12 +60,12 @@ const Index = () => {
         <div className="container mx-auto text-center max-w-4xl">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
-              Transform Your Practice with 
-              <span className="text-blue-600 block">Premium Content & Ads</span>
+              Transformieren Sie Ihre Praxis mit 
+              <span className="text-blue-600 block">Premium Content & Anzeigen</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              We help aesthetic and plastic surgeons attract more qualified patients through 
-              high-converting content creation and targeted advertising campaigns.
+              Wir helfen Ästhetik- und Plastikchirurgen dabei, mehr qualifizierte Patienten durch 
+              hochkonvertierende Content-Erstellung und zielgerichtete Werbekampagnen zu gewinnen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
@@ -73,7 +73,7 @@ const Index = () => {
                 size="lg" 
                 className="bg-blue-600 hover:bg-blue-700 px-8 py-4 text-lg"
               >
-                Schedule Free Consultation
+                Kostenlose Beratung vereinbaren
               </Button>
               <Button 
                 onClick={() => scrollToSection('results')} 
@@ -81,7 +81,7 @@ const Index = () => {
                 size="lg" 
                 className="px-8 py-4 text-lg border-slate-300 hover:bg-slate-50"
               >
-                See Our Results
+                Unsere Ergebnisse ansehen
               </Button>
             </div>
           </div>
@@ -90,15 +90,15 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-600 mb-2">150+</div>
-              <div className="text-slate-600">Surgeons Served</div>
+              <div className="text-slate-600">Betreute Chirurgen</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-600 mb-2">85%</div>
-              <div className="text-slate-600">Average Lead Increase</div>
+              <div className="text-slate-600">Durchschnittliche Lead-Steigerung</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">$2.8M+</div>
-              <div className="text-slate-600">Revenue Generated</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">2,8 Mio.€+</div>
+              <div className="text-slate-600">Generierter Umsatz</div>
             </div>
           </div>
 
@@ -113,11 +113,11 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-800 mb-4">
-              Specialized Services for Aesthetic Practices
+              Spezialisierte Leistungen für Ästhetikpraxen
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Our proven system combines compelling content creation with targeted advertising 
-              to attract your ideal patients and grow your practice.
+              Unser bewährtes System kombiniert überzeugende Content-Erstellung mit zielgerichteter Werbung, 
+              um Ihre idealen Patienten anzuziehen und Ihre Praxis zu vergrößern.
             </p>
           </div>
 
@@ -127,16 +127,16 @@ const Index = () => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Camera className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Content Creation</h3>
+                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Content-Erstellung</h3>
                 <p className="text-slate-600 mb-6">
-                  Professional before/after galleries, educational content, and engaging social media posts 
-                  that showcase your expertise and build trust with potential patients.
+                  Professionelle Vorher/Nachher-Galerien, Aufklärungsinhalte und ansprechende Social Media Posts, 
+                  die Ihre Expertise präsentieren und Vertrauen bei potenziellen Patienten aufbauen.
                 </p>
                 <ul className="text-left space-y-2 text-slate-600">
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Before/After Photography</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Educational Videos</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Vorher/Nachher-Fotografie</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Aufklärungsvideos</li>
                   <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Social Media Content</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Blog Articles</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Blog-Artikel</li>
                 </ul>
               </CardContent>
             </Card>
@@ -146,16 +146,16 @@ const Index = () => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Search className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Targeted Advertising</h3>
+                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Zielgerichtete Werbung</h3>
                 <p className="text-slate-600 mb-6">
-                  Data-driven advertising campaigns on Google and social media platforms 
-                  that reach patients actively seeking aesthetic procedures.
+                  Datenbasierte Werbekampagnen auf Google und Social Media Plattformen, 
+                  die Patienten erreichen, die aktiv nach ästhetischen Behandlungen suchen.
                 </p>
                 <ul className="text-left space-y-2 text-slate-600">
                   <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Google Ads Management</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Facebook & Instagram Ads</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Audience Targeting</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Campaign Optimization</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Facebook & Instagram Anzeigen</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Zielgruppen-Targeting</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Kampagnen-Optimierung</li>
                 </ul>
               </CardContent>
             </Card>
@@ -165,15 +165,15 @@ const Index = () => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Code className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Website Optimization</h3>
+                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Website-Optimierung</h3>
                 <p className="text-slate-600 mb-6">
-                  Convert more visitors into consultations with optimized landing pages, 
-                  streamlined booking systems, and trust-building elements.
+                  Verwandeln Sie mehr Besucher in Beratungen mit optimierten Landing Pages, 
+                  streamlinierten Buchungssystemen und vertrauensbildenden Elementen.
                 </p>
                 <ul className="text-left space-y-2 text-slate-600">
                   <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Landing Page Design</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Booking Integration</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Mobile Optimization</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Buchungsintegration</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Mobile Optimierung</li>
                   <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />Conversion Tracking</li>
                 </ul>
               </CardContent>
@@ -187,29 +187,29 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-800 mb-4">
-              Proven Results for Our Clients
+              Bewährte Ergebnisse für unsere Kunden
             </h2>
             <p className="text-xl text-slate-600">
-              See how we've helped aesthetic practices grow their patient base and revenue
+              Sehen Sie, wie wir Ästhetikpraxen beim Ausbau ihres Patientenstamms und Umsatzes geholfen haben
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center bg-white p-8 rounded-lg shadow-md">
               <div className="text-4xl font-bold text-blue-600 mb-2">300%</div>
-              <div className="text-slate-600">Average ROI</div>
+              <div className="text-slate-600">Durchschnittlicher ROI</div>
             </div>
             <div className="text-center bg-white p-8 rounded-lg shadow-md">
               <div className="text-4xl font-bold text-blue-600 mb-2">65%</div>
-              <div className="text-slate-600">More Consultations</div>
+              <div className="text-slate-600">Mehr Beratungen</div>
             </div>
             <div className="text-center bg-white p-8 rounded-lg shadow-md">
               <div className="text-4xl font-bold text-blue-600 mb-2">45%</div>
-              <div className="text-slate-600">Cost Per Lead Reduction</div>
+              <div className="text-slate-600">Reduzierte Kosten pro Lead</div>
             </div>
             <div className="text-center bg-white p-8 rounded-lg shadow-md">
               <div className="text-4xl font-bold text-blue-600 mb-2">90%</div>
-              <div className="text-slate-600">Client Retention Rate</div>
+              <div className="text-slate-600">Kunden-Bindungsrate</div>
             </div>
           </div>
         </div>
@@ -222,24 +222,24 @@ const Index = () => {
             <Card className="border-0 shadow-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white">
               <CardContent className="p-12">
                 <div className="text-center mb-8">
-                  <h3 className="text-3xl font-bold mb-4">Case Study: Beverly Hills Plastic Surgery</h3>
+                  <h3 className="text-3xl font-bold mb-4">Fallstudie: Münchener Plastische Chirurgie</h3>
                   <p className="text-blue-100 text-lg">
-                    How we helped Dr. Johnson increase monthly consultations by 180% in just 6 months
+                    Wie wir Dr. Müller dabei geholfen haben, die monatlichen Beratungen in nur 6 Monaten um 180% zu steigern
                   </p>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div className="text-center">
                     <div className="text-3xl font-bold mb-2">12</div>
-                    <div className="text-blue-100">Consultations/Month Before</div>
+                    <div className="text-blue-100">Beratungen/Monat vorher</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold mb-2">34</div>
-                    <div className="text-blue-100">Consultations/Month After</div>
+                    <div className="text-blue-100">Beratungen/Monat nachher</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">$180K</div>
-                    <div className="text-blue-100">Additional Monthly Revenue</div>
+                    <div className="text-3xl font-bold mb-2">180.000€</div>
+                    <div className="text-blue-100">Zusätzlicher Monatsumsatz</div>
                   </div>
                 </div>
               </CardContent>
@@ -253,10 +253,10 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-800 mb-4">
-              What Our Clients Say
+              Was unsere Kunden sagen
             </h2>
             <p className="text-xl text-slate-600">
-              Trusted by leading plastic surgeons across the country
+              Vertraut von führenden Plastikchirurgen in ganz Deutschland
             </p>
           </div>
 
@@ -269,13 +269,13 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-6">
-                  "AestheticGrowth transformed our online presence. We went from struggling to fill our schedule 
-                  to having a 3-month waiting list for consultations."
+                  "ÄsthetikWachstum hat unsere Online-Präsenz transformiert. Wir sind von einem 
+                  Kampf um Terminvergabe zu einer 3-monatigen Warteliste für Beratungen übergegangen."
                 </p>
                 <div className="flex items-center">
                   <div>
                     <div className="font-semibold text-slate-800">Dr. Sarah Martinez</div>
-                    <div className="text-slate-500">Beverly Hills Aesthetic Center</div>
+                    <div className="text-slate-500">Berliner Ästhetikzentrum</div>
                   </div>
                 </div>
               </CardContent>
@@ -289,13 +289,13 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-6">
-                  "The quality of leads has improved dramatically. We're seeing patients who are genuinely 
-                  interested and ready to move forward with procedures."
+                  "Die Qualität der Leads hat sich dramatisch verbessert. Wir sehen Patienten, die 
+                  wirklich interessiert sind und bereit sind, mit Behandlungen fortzufahren."
                 </p>
                 <div className="flex items-center">
                   <div>
                     <div className="font-semibold text-slate-800">Dr. Michael Chen</div>
-                    <div className="text-slate-500">Elite Plastic Surgery</div>
+                    <div className="text-slate-500">Elite Plastische Chirurgie</div>
                   </div>
                 </div>
               </CardContent>
@@ -309,13 +309,13 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-6">
-                  "Professional, results-driven, and they truly understand the aesthetic industry. 
-                  Our ROI has been exceptional from day one."
+                  "Professionell, ergebnisorientiert und sie verstehen wirklich die Ästhetikbranche. 
+                  Unser ROI war vom ersten Tag an außergewöhnlich."
                 </p>
                 <div className="flex items-center">
                   <div>
                     <div className="font-semibold text-slate-800">Dr. Jennifer Williams</div>
-                    <div className="text-slate-500">Coastal Plastic Surgery</div>
+                    <div className="text-slate-500">Küsten Plastische Chirurgie</div>
                   </div>
                 </div>
               </CardContent>
@@ -329,23 +329,23 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-4xl font-bold mb-4">
-              Ready to Grow Your Practice?
+              Bereit, Ihre Praxis zu vergrößern?
             </h2>
             <p className="text-xl text-blue-100 mb-12">
-              Schedule a free consultation to discuss how we can help you attract more qualified patients 
-              and increase your revenue with our proven marketing strategies.
+              Vereinbaren Sie eine kostenlose Beratung, um zu besprechen, wie wir Ihnen helfen können, 
+              mehr qualifizierte Patienten zu gewinnen und Ihren Umsatz mit unseren bewährten Marketingstrategien zu steigern.
             </p>
 
             <Card className="bg-white p-8 max-w-2xl mx-auto">
               <CardContent className="space-y-6">
                 <h3 className="text-2xl font-semibold text-slate-800 mb-6">
-                  Get Your Free Marketing Audit
+                  Erhalten Sie Ihre kostenlose Marketing-Analyse
                 </h3>
                 <form onSubmit={handleLeadSubmit} className="space-y-4">
                   <div>
                     <Input
                       type="text"
-                      placeholder="Your Name"
+                      placeholder="Ihr Name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       className="w-full p-4 text-lg"
@@ -355,7 +355,7 @@ const Index = () => {
                   <div>
                     <Input
                       type="email"
-                      placeholder="Your Email Address"
+                      placeholder="Ihre E-Mail-Adresse"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       className="w-full p-4 text-lg"
@@ -367,12 +367,12 @@ const Index = () => {
                     size="lg" 
                     className="w-full bg-blue-600 hover:bg-blue-700 py-4 text-lg"
                   >
-                    Schedule Free Consultation
+                    Kostenlose Beratung vereinbaren
                   </Button>
                 </form>
                 <p className="text-sm text-slate-500">
-                  No commitment required. We'll analyze your current marketing and show you 
-                  specific opportunities to grow your practice.
+                  Keine Verpflichtung erforderlich. Wir werden Ihr aktuelles Marketing analysieren und Ihnen 
+                  spezifische Möglichkeiten zum Wachstum Ihrer Praxis zeigen.
                 </p>
               </CardContent>
             </Card>
@@ -385,20 +385,20 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <div className="text-2xl font-bold mb-4">
-              Aesthetic<span className="text-blue-400">Growth</span>
+              Ästhetik<span className="text-blue-400">Wachstum</span>
             </div>
             <p className="text-slate-300 mb-8">
-              Specialized digital marketing for aesthetic and plastic surgery practices
+              Spezialisiertes digitales Marketing für Ästhetik- und Plastikchirurgie-Praxen
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-slate-300">
-              <span>hello@aestheticgrowth.com</span>
+              <span>hallo@ästhetikwachstum.de</span>
               <span>|</span>
-              <span>(555) 123-4567</span>
+              <span>+49 89 123 4567</span>
               <span>|</span>
-              <span>Beverly Hills, CA</span>
+              <span>München, Deutschland</span>
             </div>
             <div className="mt-8 pt-8 border-t border-slate-700 text-sm text-slate-400">
-              © 2024 AestheticGrowth. All rights reserved.
+              © 2024 ÄsthetikWachstum. Alle Rechte vorbehalten.
             </div>
           </div>
         </div>
