@@ -10,7 +10,7 @@ const Header = ({ scrollToSection }: HeaderProps) => {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-slate-800">
-          Ästhetik<span className="text-blue-600">Wachstum</span>
+          Vedunas
         </div>
         <nav className="hidden md:flex space-x-8">
           <button onClick={() => scrollToSection('services')} className="text-slate-600 hover:text-blue-600 transition-colors">Leistungen</button>
