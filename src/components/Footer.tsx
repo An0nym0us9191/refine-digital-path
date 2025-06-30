@@ -14,7 +14,7 @@ const Footer = () => {
             <span>|</span>
             <span>+49 89 123 4567</span>
             <span>|</span>
-            <span>München, Deutschland</span>
+            <span>Hannover, Deutschland</span>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-700">
             <div className="flex flex-wrap justify-center gap-6 mb-4 text-sm">
