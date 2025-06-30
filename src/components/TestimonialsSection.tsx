@@ -24,13 +24,12 @@ const TestimonialsSection = () => {
                 ))}
               </div>
               <p className="text-slate-600 mb-6">
-                "ÄsthetikWachstum hat unsere Online-Präsenz transformiert. Wir sind von einem 
+                "Vedunas hat unsere Online-Präsenz transformiert. Wir sind von einem 
                 Kampf um Terminvergabe zu einer 3-monatigen Warteliste für Beratungen übergegangen."
               </p>
               <div className="flex items-center">
                 <div>
                   <div className="font-semibold text-slate-800">Dr. Sarah Martinez</div>
-                  <div className="text-slate-500">Berliner Ästhetikzentrum</div>
                 </div>
               </div>
             </CardContent>
@@ -50,7 +49,6 @@ const TestimonialsSection = () => {
               <div className="flex items-center">
                 <div>
                   <div className="font-semibold text-slate-800">Dr. Michael Chen</div>
-                  <div className="text-slate-500">Elite Plastische Chirurgie</div>
                 </div>
               </div>
             </CardContent>
@@ -70,7 +68,6 @@ const TestimonialsSection = () => {
               <div className="flex items-center">
                 <div>
                   <div className="font-semibold text-slate-800">Dr. Jennifer Williams</div>
-                  <div className="text-slate-500">Küsten Plastische Chirurgie</div>
                 </div>
               </div>
             </CardContent>
