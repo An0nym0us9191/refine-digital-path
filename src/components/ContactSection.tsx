@@ -1,87 +1,110 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+import { Clock, Users, TrendingUp, CheckCircle } from "lucide-react";
 
 const ContactSection = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const { toast } = useToast();
-
-  const handleLeadSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email || !name) {
-      toast({
-        title: "Bitte füllen Sie alle Felder aus",
-        variant: "destructive"
-      });
-      return;
-    }
-    
-    // Here you would typically send to your backend
-    toast({
-      title: "Vielen Dank für Ihr Interesse!",
-      description: "Wir werden uns innerhalb von 24 Stunden bei Ihnen melden, um zu besprechen, wie wir Ihre Praxis beim Wachstum unterstützen können."
-    });
-    
-    setEmail("");
-    setName("");
+  const handleCalendlyClick = () => {
+    // Replace with your actual Calendly link
+    window.open("https://calendly.com/your-calendly-link", "_blank");
   };
 
   return (
-    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-blue-600 to-blue-700">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 px-2">
-            Bereit, Ihre Praxis zu vergrößern?
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-blue-100 mb-8 sm:mb-12 px-4 max-w-3xl mx-auto">
-            Vereinbaren Sie eine kostenlose Beratung, um zu besprechen, wie wir Ihnen helfen können, 
-            mehr qualifizierte Patienten zu gewinnen und Ihren Umsatz mit unseren bewährten Marketingstrategien zu steigern.
-          </p>
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-30" style={{backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.05\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"2\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"}}></div>
+      
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="max-w-5xl mx-auto">
+          {/* Main CTA */}
+          <div className="text-center text-white mb-12 lg:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+              Verdoppeln Sie Ihre Patientenzahl
+              <span className="block text-blue-200">in den nächsten 90 Tagen</span>
+            </h2>
+            <p className="text-lg sm:text-xl lg:text-2xl text-blue-100 mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed">
+              Kostenlose Strategiesitzung: Wir zeigen Ihnen <strong>exakt</strong>, wie Sie mit unserem 
+              bewährten System mehr qualifizierte Patienten gewinnen und Ihren Umsatz nachhaltig steigern.
+            </p>
+          </div>
 
-          <Card className="bg-white p-4 sm:p-6 lg:p-8 max-w-2xl mx-auto">
-            <CardContent className="space-y-4 sm:space-y-6">
-              <h3 className="text-xl sm:text-2xl font-semibold text-slate-800 mb-4 sm:mb-6">
-                Erhalten Sie Ihre kostenlose Marketing-Analyse
-              </h3>
-              <form onSubmit={handleLeadSubmit} className="space-y-3 sm:space-y-4">
-                <div>
-                  <Input
-                    type="text"
-                    placeholder="Ihr Name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="w-full p-3 sm:p-4 text-base sm:text-lg"
-                    required
-                  />
+          {/* Benefits Grid */}
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white border border-white/20">
+              <Clock className="w-12 h-12 mx-auto mb-4 text-blue-200" />
+              <h3 className="text-lg font-semibold mb-2">30 Minuten</h3>
+              <p className="text-blue-100 text-sm">Intensive Analyse Ihrer aktuellen Marketingstrategie</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white border border-white/20">
+              <TrendingUp className="w-12 h-12 mx-auto mb-4 text-blue-200" />
+              <h3 className="text-lg font-semibold mb-2">Sofortige Ergebnisse</h3>
+              <p className="text-blue-100 text-sm">Konkrete Handlungsempfehlungen die Sie direkt umsetzen können</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white border border-white/20">
+              <Users className="w-12 h-12 mx-auto mb-4 text-blue-200" />
+              <h3 className="text-lg font-semibold mb-2">Bewährtes System</h3>
+              <p className="text-blue-100 text-sm">Über 150 Praxen vertrauen bereits auf unsere Expertise</p>
+            </div>
+          </div>
+
+          {/* Main CTA Card */}
+          <Card className="bg-white shadow-2xl max-w-3xl mx-auto overflow-hidden">
+            <CardContent className="p-8 sm:p-10 lg:p-12 text-center">
+              <div className="mb-8">
+                <h3 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-4">
+                  Kostenlose Praxis-Wachstumsstrategie
+                </h3>
+                <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                  In diesem exklusiven Gespräch analysieren wir Ihre aktuelle Situation und entwickeln 
+                  gemeinsam eine maßgeschneiderte Strategie für Ihr Praxiswachstum.
+                </p>
+              </div>
+
+              {/* What you get */}
+              <div className="bg-slate-50 rounded-lg p-6 mb-8 text-left">
+                <h4 className="font-semibold text-slate-800 mb-4 text-center">Das erwartet Sie:</h4>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-700">Detaillierte Analyse Ihrer aktuellen Online-Präsenz</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-700">Identifikation ungenutzter Wachstumspotentiale</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-700">Konkrete Handlungsempfehlungen für die nächsten 90 Tage</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-700">Keine Verpflichtung, kein Verkaufsgespräch</span>
+                  </div>
                 </div>
-                <div>
-                  <Input
-                    type="email"
-                    placeholder="Ihre E-Mail-Adresse"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full p-3 sm:p-4 text-base sm:text-lg"
-                    required
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full bg-blue-600 hover:bg-blue-700 py-3 sm:py-4 text-base sm:text-lg"
-                >
-                  Kostenlose Beratung vereinbaren
-                </Button>
-              </form>
-              <p className="text-xs sm:text-sm text-slate-500 px-2">
-                Keine Verpflichtung erforderlich. Wir werden Ihr aktuelles Marketing analysieren und Ihnen 
-                spezifische Möglichkeiten zum Wachstum Ihrer Praxis zeigen.
+              </div>
+
+              <Button 
+                onClick={handleCalendlyClick}
+                size="lg" 
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 py-4 sm:py-5 text-lg sm:text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                Jetzt kostenlose Strategiesitzung buchen
+              </Button>
+              
+              <p className="text-sm text-slate-500 mt-6 leading-relaxed">
+                <strong>100% kostenlos & unverbindlich</strong> • Keine Verkaufstaktiken • 
+                Sofortige Mehrwerte garantiert
               </p>
             </CardContent>
           </Card>
+
+          {/* Trust indicators */}
+          <div className="text-center mt-10 text-blue-100">
+            <p className="text-sm">
+              ⭐⭐⭐⭐⭐ "Die Strategiesitzung hat unsere Praxis transformiert. Innerhalb von 60 Tagen konnten wir 
+              unsere Patientenanfragen um 180% steigern." - Dr. Schmidt, Hannover
+            </p>
+          </div>
         </div>
       </div>
     </section>
