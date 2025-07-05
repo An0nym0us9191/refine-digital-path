@@ -8,14 +8,14 @@ interface HeroSectionProps {
 
 const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
   return (
-    <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
-      <div className="container mx-auto text-center max-w-4xl">
+    <section className="pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-12 md:pb-16 px-4 sm:px-6">
+      <div className="container mx-auto text-center max-w-5xl">
         <div className="animate-fade-in">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-800 mb-3 sm:mb-4 md:mb-6 leading-tight">
             Transformieren Sie Ihre Praxis mit 
-            <span className="text-blue-600 block mt-2">Premium Content & Anzeigen</span>
+            <span className="text-blue-600 block mt-1 sm:mt-2">Premium Content & Anzeigen</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-slate-600 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 mb-4 sm:mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
             Wir helfen Ästhetik- und Plastikchirurgen dabei, mehr qualifizierte Patienten durch 
             hochkonvertierende Content-Erstellung und zielgerichtete Werbekampagnen zu gewinnen.
           </p>
@@ -39,18 +39,18 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         </div>
         
         {/* Trust Indicators */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-12 md:mt-16 px-2 sm:px-4">
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">150+</div>
-            <div className="text-sm sm:text-base text-slate-600">Betreute Chirurgen</div>
+            <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">150+</div>
+            <div className="text-xs sm:text-sm md:text-base text-slate-600">Betreute Chirurgen</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">85%</div>
-            <div className="text-sm sm:text-base text-slate-600">Durchschnittliche Lead-Steigerung</div>
+            <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">85%</div>
+            <div className="text-xs sm:text-sm md:text-base text-slate-600">Durchschnittliche Lead-Steigerung</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">2,8 Mio.€+</div>
-            <div className="text-sm sm:text-base text-slate-600">Generierter Umsatz</div>
+            <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">2,8 Mio.€+</div>
+            <div className="text-xs sm:text-sm md:text-base text-slate-600">Generierter Umsatz</div>
           </div>
         </div>
 

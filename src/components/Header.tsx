@@ -13,7 +13,7 @@ const Header = ({ scrollToSection }: HeaderProps) => {
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
-        <div className="text-xl sm:text-2xl font-bold text-slate-800">
+        <div className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800">
           Vedunas
         </div>
         

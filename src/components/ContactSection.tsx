@@ -29,21 +29,21 @@ const ContactSection = () => {
           </div>
 
           {/* Benefits Grid */}
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white border border-white/20">
-              <Clock className="w-12 h-12 mx-auto mb-4 text-blue-200" />
-              <h3 className="text-lg font-semibold mb-2">30 Minuten</h3>
-              <p className="text-blue-100 text-sm">Intensive Analyse Ihrer aktuellen Marketingstrategie</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12 lg:mb-16">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 text-center text-white border border-white/20">
+              <Clock className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 sm:mb-4 text-blue-200" />
+              <h3 className="text-base sm:text-lg font-semibold mb-2">30 Minuten</h3>
+              <p className="text-blue-100 text-xs sm:text-sm">Intensive Analyse Ihrer aktuellen Marketingstrategie</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white border border-white/20">
-              <TrendingUp className="w-12 h-12 mx-auto mb-4 text-blue-200" />
-              <h3 className="text-lg font-semibold mb-2">Sofortige Ergebnisse</h3>
-              <p className="text-blue-100 text-sm">Konkrete Handlungsempfehlungen die Sie direkt umsetzen können</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 text-center text-white border border-white/20">
+              <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 sm:mb-4 text-blue-200" />
+              <h3 className="text-base sm:text-lg font-semibold mb-2">Sofortige Ergebnisse</h3>
+              <p className="text-blue-100 text-xs sm:text-sm">Konkrete Handlungsempfehlungen die Sie direkt umsetzen können</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white border border-white/20">
-              <Users className="w-12 h-12 mx-auto mb-4 text-blue-200" />
-              <h3 className="text-lg font-semibold mb-2">Bewährtes System</h3>
-              <p className="text-blue-100 text-sm">Über 150 Praxen vertrauen bereits auf unsere Expertise</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 text-center text-white border border-white/20 sm:col-span-2 md:col-span-1">
+              <Users className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 sm:mb-4 text-blue-200" />
+              <h3 className="text-base sm:text-lg font-semibold mb-2">Bewährtes System</h3>
+              <p className="text-blue-100 text-xs sm:text-sm">Über 150 Praxen vertrauen bereits auf unsere Expertise</p>
             </div>
           </div>
 
@@ -99,8 +99,8 @@ const ContactSection = () => {
           </Card>
 
           {/* Trust indicators */}
-          <div className="text-center mt-10 text-blue-100">
-            <p className="text-sm">
+          <div className="text-center mt-6 sm:mt-8 md:mt-10 text-blue-100 px-4">
+            <p className="text-xs sm:text-sm">
               ⭐⭐⭐⭐⭐ "Die Strategiesitzung hat unsere Praxis transformiert. Innerhalb von 60 Tagen konnten wir 
               unsere Patientenanfragen um 180% steigern." - Dr. Schmidt, Hannover
             </p>
